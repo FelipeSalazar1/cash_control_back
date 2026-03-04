@@ -24,7 +24,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/expenses")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+    "http://localhost:4200", 
+    "https://cash-control-front.vercel.app"
+})
 @Validated
 public class ExpenseController {
 
